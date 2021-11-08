@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "icon" href = "images\paris.jpg" type = "image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title></title>
+	<style type="text/css">
+
+
+		h1{
+			font: normal 70px 'Cookie', cursive; 
+			color:white; 
+
+			
+		}
+
+		.link{
+			padding: 8px;
+			background-color: hotpink;
+			text-decoration: none;
+			display: inline-block;
+			color: white;
+		}
+
+		.para{
+			font-size:13px;
+		}
+
+
+		.cardlink{
+			padding: 8px;
+			background-color: blue;
+			color: white;
+			text-decoration: none;
+		}
+
+		.cardlink:hover{
+			background-color: hotpink;
+
+		}
+
+		.vertical {
+            border-left: 6px solid darkblue;
+            height: 120px;
+           
+          
+        }
+
+       .cardheading{
+       	color:darkviolet;
+       	background-color: ;
+       	padding: 2px;
+       	font-size: 70px;
+       } 
+
+       .contact-details{
+       	color: white;
+       }
+
+       .contact-details ul li{
+       	list-style-type: none;
+       }
+       
+       .card-link2{
+       	text-decoration: none;
+       	display: inline-block;
+       	background-color: green;
+       	color: white;
+       } 
+       .card-link2:hover{
+       	background-color: white;
+       	color: green;
+
+       }
+
+       .header-link{
+       	display: inline-block;
+       	color: white;
+       	text-decoration: none;
+       	background-color: transparent;
+
+       }
+
+       .header-link:hover{
+       	display: inline-block;
+       	color: darkblue;
+       }
+       .fa {
+			  padding: 5px;
+			  font-size: 20px;
+			  width: 40px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			}
+
+			   .fa:hover {
+			    opacity: 0.7;
+			}
+
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+
+
+
+			.fa-google {
+			  background: #dd4b39;
+			  color: white;
+			}
+
+
+
+			.fa-youtube {
+			  background: #bb0000;
+			  color: white;
+			}
+
+			.fa-instagram {
+			  background: #125688;
+			  color: white;
+			}
+
+
+
+			.fa-snapchat-ghost {
+			  background: #fffc00;
+			  color: white;
+			  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+					
+			.flip-box {
+			  background-color: transparent;
+			  width: 100%;
+			  height: 200px;
+			  border: 1px solid #f1f1f1;
+			  perspective: 1000px; 
+			 
+			}
+
+			
+			.flip-box-inner {
+			  position: relative;
+			  width: 100%;
+			  height: 100%;
+			  text-align: center;
+			  transition: transform 0.8s;
+			  transform-style: preserve-3d;
+
+			}
+
+			
+			.flip-box:hover .flip-box-inner {
+			  transform: rotateY(180deg);
+			}
+
+		
+			.flip-box-front, .flip-box-back {
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  -webkit-backface-visibility: hidden; /* Safari */
+			  backface-visibility: hidden;
+
+			}
+
+		
+			.flip-box-front {
+			  background-color: #bbb;
+			  color: black;
+			}
+
+			
+			.flip-box-back {
+			  background-color: dodgerblue;
+			  color: white;
+			  transform: rotateY(180deg);
+			}
+	</style>
+</head>
+<body>
+<div class="container-fluid" style="background-image: url('images/paris.jpg');">
+	<nav class="navbar navbar-expand-sm navbar-light bg- sticky-top shadow p-2 mb-5 bg-transparent rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="images\paris.jpg" width="50" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html"style="color: white;">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#m1"style="color: white;">Latest Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html"style="color: white;">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"style="color: white;">Contact Us</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" style="padding-right: 6px;">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-" style="background-color: darkviolet; color: white;" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" style="padding-bottom: 400px;">
+<div class="row">
+	<div class="col-md-5">
+	<h1 style="font: normal 70px 'Cookie', cursive; color:white; padding-top:100px ; padding-left: 50px; " >Travelling Blog </h1>
+	<h5 style="font: normal 30px ; color:whitesmoke ; padding-left: 110px; ">To travel is to live.</h5>
+</div>
+<div class="col-md-3">
+	
+</div>
+<div class="col-md-4 shadow" style="color:white; background-color: transparent; ">
+	<h5 style="padding-top:40px">Read and view Latest Blogs-</h5>
+	<ul>
+	<li><a class="header-link" href="blog.html">Best Countries to Visit in Europe</a></li>
+	<li><a class="header-link" href="blogusa.html">15 Best Places to Visit in the United States</a></li>
+	<li><a class="header-link" href="luxuryblog.html">12 Best Luxury All-Inclusive Resorts in the World.</a></li>
+	<li><a class="header-link" href="vacationblog.html">10 Best Tropical Vacations</a></li>
+	<li><a class="header-link" href="#m1">17 Most Beautiful Islands in the World</a></li>
+	<li><a class="header-link" href="#m1">Top-Rated Tourist Attractions in Seychelles</a></li>
+	<li><a class="header-link" href="#m1">Best Time to Visit the Seychelles.</a></li>
+	<li><a class="header-link" href="#m1">12 Best Resorts in Mauritius</a></li>
+	<li><a class="header-link" href="#m1">13 Best Game Reserves in Africa</a></li>
+	<li><a class="header-link" href="#m1">15 Top-Rated Tourist Attractions in Kenya</a></li>
+	<li><a class="header-link" href="#m1">11 Best All-Inclusive Resorts in the Maldives</a></li>
+	<li><a class="header-link" href="#m1">8 Best Underwater Hotels</a></li>
+	<li><a class="header-link" href="#m1">Kurumba, Maldives:Luxurious Family Resort</a></li>
+	</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-------------------------------------------------------- thoughts Section------------------------------------------------------->
+
+  <div class="container-fluid" style="padding:40px">
+    <div class="row">
+    	<div class="col-lg-2"></div>
+      <div class="col-lg-8">
+      	<div class="vertical">
+        <h2 class="h3" style="color:darkviolet;padding-left: 50px;"><em>Thoughts</em></h2>
+        <div class="blockquote">
+          <blockquote style="color:darkblue;padding-left: 50px;"><b>Let the rain kiss you. Let the rain beat upon your head with silver liquid drops. Let the rain sing you a lullaby.</b></blockquote>
+          <footer class="blockquote-footer" style="padding-left:20px">Travellers</footer>
+        </div>
+      </div>
+      </div>
+        	<div class="col-lg-2"></div>
+    </div>
+  </div>
+
+
+<!-----------------------------------------------------flip cardsssssssssssssss----------------------------------------------------->
+<div class="container-fluid">
+<div class="row" align="center">
+	<h1 style="color:darkviolet;"> Best Countries to Visit in Europe</h1>
+		<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front"style="background-image: url(images/italy.jpg); background-size: 100% ;">
+			      <h1> Italy</h1>
+			    </div>
+			    <div class="flip-box-back" style="background-color:darkviolet;">
+			      <h5>Amalfi Coast, Italy</h5>
+			      <p class="para">It's hard to picture Italy without salivating over the thought of its food. This boot-shaped country boasts tomatoes so sweet they taste like candy, pizzas cooked to perfection, and gelato that literally melts in your mouth. Italy is a utopia for gastronomes.</p>
+			      <a class="link" href="blog.html">Visit Blog</a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/austria.jpg); background-size: 100% ;">
+			      <h1>Austria</h1>
+			    </div>
+			    <div class="flip-box-back" style="background-color:darkviolet;">
+			    	<h5>Austria</h5>
+			      <p class="para">Austria is one of those countries that can truly take your breath away. Ringed by the magnificent Australian Alps and peppered with sparkling lakes, this wonderland is one of the most beautiful countries in Europe.</p>
+			      <a class="link" href="blog.html">Visit Blog</a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/spain.jpg); background-size: 100% ;">
+			      <h1>Spain</h1>
+			    </div>
+			    <div class="flip-box-back" style="background-color:darkviolet;">
+			      <p class="para">One of the most beautiful countries in Europe, Spain is also one of its best. From its architectural masterpieces to its towering mountain ranges, seaside cliffs, and hilltop villages, your camera will thank you for visiting this magical spot. No wonder more than 89 million tourists visited Spain in 2018, making it the second most visited country in the world.</p>
+			      <a class="link" href="blog.html">Visit Blog</a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/iceland.jpg); background-size: 100% ;">
+			      <h1>Iceland</h1>
+			    </div>
+			    <div class="flip-box-back"style="background-color:darkviolet;">
+			    	<h5>Iceland</h5>
+			    	<p class="para">Iceland is a majestic land sprinkled with some of the world's most captivating scenery. A sparsely populated island, this breathtaking spot has become one of the most coveted of bucket list vacation destinations.</p>
+			        <a class="link" href="blog.html">Visit Blog</a> 
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	</div>
+	<br>
+	<!----------------------------------------------------------ROW 2 of Cards-------------------------------------------->
+	<div class="row" align="center" style="padding-bottom: 10px;">
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/france.jpg); background-size: 100% ;">
+			      <h1>France</h1>
+			    </div>
+			    <div class="flip-box-back"style="background-color:darkviolet;">
+			    	<h5>France</h5>
+			    	<p class="para">Vive la France! Known for its romance, delectable food, art, culture, and natural beauty, this lovely country offers everything you'd ever want in a vacation. Every type of traveler will find something to love in France</p>
+			        <a class="link" href="blog.html">Visit Blog</a> 
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+
+
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/sweden.jpg); background-size: 100% ;">
+			      <h1>Sweden</h1>
+			    </div>
+			    <div class="flip-box-back"style="background-color:darkviolet;">
+			    	<h5>Sweden</h5>
+			    	<p class="para">Bet you've never met a cranky Swede! Known for their gracious nature, the Swedish people are a friendly Nordic bunch. Given their impeccable surroundings – ancient walled cities, sparkling lakes, sun-drenched beaches, and glacier-topped mountains – it's no wonder they're so happy</p>
+			        <a class="link" href="blog.html">Visit Blog</a> 
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+
+	
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/greece.jpg); background-size: 100% ;">
+			      <h1>Greece</h1>
+			    </div>
+			    <div class="flip-box-back"style="background-color:darkviolet;">
+			    	<h5>Greece</h5>
+			    	<p class="para">Perhaps the most laid-back of all the countries on this list, Greece is the perfect place to relax. Azure domes top whitewashed buildings on the country's smaller isles, their doors and gates painted with colors so bright they beg to be photographed.</p>
+			        <a class="link" href="blog.html">Visit Blog</a> 
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	
+	<div class="col-md-3">
+			<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front" style="background-image: url(images/switzerland.jpg); background-size: 100% ;">
+			      <h1>Switzerland</h1>
+			    </div>
+			    <div class="flip-box-back"style="background-color:darkviolet;">
+			    	<h5>Switzerland</h5>
+			    	<p class="para">One of the most expensive countries to visit in Europe, Switzerland is more than worth its hefty price tags. Snowcapped mountains burst through the clouds, emerging from lush, verdant fields dotted with sheep.</p>
+			        <a class="link" href="blog.html">Visit Blog</a> 
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<!-------------------------------------------------quote bannerrr------------------------------------------------------------------------->
+
+<div class="container-fluid" style="background-image:url(images/banner4.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+	<h1 align="center" style="padding:100px; color:white;">“There’s a sunrise and a sunset every single day, and they’re absolutely free.Don’t miss so many of them” </h1>
+	<h3 align="center"></h3>
+	
+</div>
+
+
+
+
+<!--------------------------------------------------cards-------------------------------------------------------------------->
+<div class="container-fluid" align="center">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/usa.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <h6>15 Best Places to Visit in the United States</h6>
+		    <a class="cardlink" href="blogusa.html">View & Read</a>
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/luxury.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <h6>12 Best Luxury All-Inclusive Resorts in the World.</h6>
+		    <a class="cardlink" href="luxuryblog.html">View & Read</a>
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/tropicalvacations.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <h6>10 Best Tropical Vacations</h6>
+		    <a class="cardlink" href="vacationblog.html">View & Read</a>
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/island.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <h6>17 Most Beautiful Islands in the World</h6>
+		    <a class="cardlink" href="islandblog.html">View & Read</a>
+    
+      </div>	
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-------------------------------------------------------- thoughts Section-2------------------------------------------------------>
+
+  <div class="container-fluid" style="padding:40px">
+    <div class="row">
+    	<div class="col-lg-3"></div>
+      <div class="col-lg-7">
+      	<div class="vertical">
+        <h2 class="h3" style="color:darkviolet;padding-left: 50px;"><em>Thoughts</em></h2>
+        <div class="blockquote" style="padding-left: 50px">
+          <blockquote style="color:darkblue;"><b>“Travel is the only thing you buy that makes you richer” </b></blockquote>
+          <footer class="blockquote-footer">Anonymous.</footer>
+        </div>
+      </div>
+      </div>
+        	<div class="col-lg-2"></div>
+    </div>
+  </div>
+
+<hr>
+
+
+<!--------------------------------------------------cards-----------2--------------------------------------------------------->
+<div id="m1" class="container-fluid" align="center">
+	<h1 class="cardheading">More destinations</h1>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/toprated.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">Top-Rated Tourist Attractions in Seychelles</a>
+		    
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/sey.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">Best Time to Visit the Seychelles.</a>
+		  
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/mau.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">12 Best Resorts in Mauritius</a>
+		
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/africa.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">13 Best Game Reserves in Africa</a>
+		    
+    
+      </div>	
+		</div>
+		
+	</div>
+<!------------------------------------------- row 2------------------------------------->
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/kenya.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">15 Top-Rated Tourist Attractions in Kenya</a>
+		    
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/maldives.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">11 Best All-Inclusive Resorts in the Maldives</a>
+		  
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/underwater.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">8 Best Underwater Hotels</a>
+		
+    
+      </div>	
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="height:100%">
+		    <img src="images/kuru.jpg" alt="USA" style="width:100%;height: 100%;">
+		    <a class="card-link2" href="">Kurumba, Maldives:Luxurious Family Resort</a>
+		    
+    
+      </div>	
+		</div>
+		
+	</div>
+	
+</div>
+<!-------------------------------------------------------- thoughts Section-3------------------------------------------------------>
+
+  <div class="container-fluid" style="padding:40px">
+    <div class="row">
+    	<div class="col-lg-3"></div>
+      <div class="col-lg-7">
+      	<div class="vertical">
+        <h2 class="h3" style="color:darkviolet;padding-left: 50px;"><em>Thoughts</em></h2>
+        <div class="blockquote" style="padding-left: 50px">
+          <blockquote style="color:darkblue;"><b>“Travel is the only thing you buy that makes you richer” </b></blockquote>
+          <footer class="blockquote-footer">Anonymous.</footer>
+        </div>
+      </div>
+      </div>
+        	<div class="col-lg-2"></div>
+    </div>
+  </div>
+
+
+<!-- Gallery Section-->
+	<h1 style="background-color:gray;color: white; padding: 8px;font-size: 40px; "align="center">My Gallery</h1>
+<div class="container-fluid" >
+
+  <div class="row">
+		    <div class="col-md-3 " style="padding:0px">
+		      <img src="images\f1.jpg" width="100%" height="260">
+		          
+		    </div>
+		    <div class="col-md-3 " style="padding:0px">
+		     <img src="images\f2.jpg" width="100%" height="260" >
+		          
+		    </div>
+		    <div class="col-md-3"style="padding:0px">
+		     <img src="images\f3.jfif"width="100%" height="260">
+		    </div>
+		    <div class="col-md-3"style="padding:0px">
+		     <img src="images\f4.jpg"width="100%" height="260" >
+		          
+		    </div>
+  </div>
+  <div class="row">
+  	 <div class="col-md-3 " style="padding:0px">
+		      <img src="images\f5.jpg" width="100%" height="260">
+		          
+		    </div>
+		    <div class="col-md-3 " style="padding:0px">
+		     <img src="images\f6.jpg" width="100%" height="260" >
+		          
+		    </div>
+		    <div class="col-md-3"style="padding:0px">
+		     <img src="images\f7.jpg"width="100%" height="260">
+		    </div>
+		    <div class="col-md-3"style="padding:0px">
+		     <img src="images\f8.jpg"width="100%" height="260" >
+		          
+		    </div>
+  </div>
+</div>
+
+ <!-- -----------------------------------------------------Page Footer ------------------------------------------->
+    <footer class="main-footer">
+        <div class="container-fluid" style="background-color: black; padding:50px">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <h4 style="color:white;">Travelling Blog</h4>
+                        <hr style="color:white;">
+                    </div>
+                    <div class="contact-details">
+                        <p>Kolkata ❤</p>
+                        <p>Phone: ----------</p>
+                        <p>Email: <a href="">aesthetelover@gmail.com</a></p>
+                        
+                            <a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <a  href="#"><i class="fa fa-google"></i></a></li>
+                            <a  href="https://www.instagram.com/travelwithmotalu/"><i class="fa fa-instagram"></i></a></li>
+                            <a  href="#"><i class="fa fa-snapchat-ghost"></i></a></li>
+                            <a  href="#"><i class="fa fa-youtube"></i></a></li>
+                       
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="menus d-flex">
+
+
+                        <ul class="list-unstyled" style="padding-right: 20px;padding-top: 50px;">
+
+                            <li> <a style="color: white; text-decoration: ;" href="#">My Account</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">Add Listing</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">Pricing</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">Privacy &amp; Policy</a></li>
+                        </ul>
+                        <ul class="list-unstyled" style="padding-top: 50px;">
+                            <li> <a style="color: white; text-decoration: ;" href="#">Our Partners</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">FAQ</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">How It Works</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">How It Works</a></li>
+                            <li> <a style="color: white; text-decoration: ;" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+              
+
+										<h2 style="color:whitesmoke">Subscribe to our Newsletter</h2>
+
+										<h6 style="color:whitesmoke;">Discover destinations, find outdoor adventures, follow the journeys of our travel writers around the world, and be inspired.</h6>
+										<b><input type="text" name="" ><a style="padding:5px;background-color: red;color: white;" href="">Subscribe</a></b>
+
+                	
+                </div>
+                <div class="col-md-3">
+                	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.964677802847!2d75.8805852147402!3d30.522037881711142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391067c5e423070d%3A0x44a21e577824143a!2sAACP%20Computer%20Education!5e0!3m2!1sen!2sin!4v1636206376875!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2021 All rights reserved. Travelling Blog</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
